@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Habit/Execution Logger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2 class="heading">Js Habit Logger</h2>
+    <form class="container" id="taskForm">
+        <div class="inputLabels">
+            <label for="taskName">Task Name</label>
+            <input type="text" autocapitalize="words" placeholder="Enter Task Name" class="inputs" name="task_name"
+                id="taskName">
+        </div>
+        <div class="inputLabels">
+            <label for="minuteSpent">Minute Spent</label>
+            <input type="number" class="inputs" placeholder="Enter Task Time (in Minutes...)" name="minute_spent"
+                id="minuteSpent">
+        </div>
+        <button id="logSes">Log Session</button>
+    </form>
+
+    <div id="focusTime">
+
+    </div>
+
+    <div class="clearAllCont">
+        <button id="clearAll">Clear All</button>
+    </div>
+
+    <ul id="taskCont">
+
+    </ul>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/noumanqamar450/alertbox@main/version/1.0.2/alertbox.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: #010736;
+    flex-direction: column;
+    padding: 5rem;
+    gap: 4rem;
+    overflow-x: hidden;
+}
+
+
+.heading{
+    text-align: center;
+    color: #FCF1D0;
+    text-shadow: 1px 1px 10px #4e81f8;
+    font-size: 2rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    height: 70%;
+}
+
+.inputLabels{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    color: #FCF1D0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 5px #709bff;
+}
+
+
+#logSes{
+    background-color: #22396F;
+    border: none;
+    color: #FCF1D0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease 100ms;
+    position: relative;
+}
+
+#logSes:active{
+    transform: scale(0.985);
+}
+
+.loader{
+    color: #FCF1D0;  
+}
+
+
+.inputs{
+    border: none;
+    padding: 0.25rem 0.65rem;
+    font-size: 1.125rem;
+    text-transform: capitalize;
+}
+
+#taskCont{
+    border: 2px solid #FCF1D0;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    width: 100%;
+    color: #FCF1D0;  
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.125rem;
+}
+
+.listCont{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 0.5rem;
+    color: inherit;
+}
+
+#focusTime{
+    margin: 0 auto;
+    border: 2px solid whitesmoke;
+    box-shadow: 1px 1px 4px 8px solid rgb(150, 239, 255);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4rem;
+    color: #FCF1D0;  
+    padding: 0.3rem 0.6rem;
+    background-color: #22396F;
+}
+
+@media screen and (max-width: 786px) {
+    .container{
+        width: 100%;
+        height: 80%;
+        
+    }
+    
+    body{
+        justify-content: center;
+        padding: 5rem 1rem;
+    }
+}
+
+.clearAllCont{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    
+}
+
+#clearAll, .deleteBtns{
+    padding: 0.5rem 1rem;
+    border-radius: 0.61rem;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: rgb(147, 0, 0);
+    color: #FCF1D0;  
+    
+}
+
